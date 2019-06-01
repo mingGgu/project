@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="movie">
+	<select id="main" resultType="mv">
+		select * from movie where movie_nowrank in (1, 2, 3) order by movie_nowrank
+	</select>
+	<select id="mainZ" resultType="mv">
+		select * from movie where movie_no in (select movie_no from zzim where member_no = #{member_no} and movie_zzim > 0)
+	</select>
+	<select id="mainG" resultType="mv">
+		select * from movie where movie_no in (select movie_no from good where member_no = #{member_no} and movie_good > 0)
+	</select>
+	<select id="boxoffice" resultType="mv">
+		select * from movie where movie_nowrank > 0
+	</select>
+
+	<select id="listMV" resultType="mv">
+		select * from movie order by movie_opendate desc nulls last
+	</select>
+	
+	<select id="searchMV" resultType="mv">
+  		select * from movie
+  		<if test="search != null and search != ''">
+  			where (movie_title like '%'||#{search}||'%') OR (movie_titleEng like '%'||#{search}||'%') OR (movie_director like '%'||#{search}||'%') OR (movie_actor like '%'||#{search}||'%') OR (movie_genre like '%'||#{search}||'%') OR (movie_nation like '%'||#{search}||'%')
+		</if>
+	</select>
+
+	<select id="checkZ" resultType="zzim">
+		select distinct(movie_no) from zzim where member_no = #{member_no} and movie_zzim > 0
+	</select>
+	<insert id="zzim">
+		insert into zzim values ((select nvl(max(zzim_no), 0) from zzim)+1, #{member_no}, #{movie_no}, 1, sysdate)
+	</insert>
+	<delete id="nzzim">
+		delete zzim where member_no = #{member_no} and movie_no = #{movie_no}
+	</delete>
+	
+	<select id="checkG" resultType="good">
+		select distinct(movie_no) from good where member_no = #{member_no} and movie_good > 0
+	</select>
+	<insert id="good">
+		insert into good values ((select nvl(max(good_no), 0) from good)+1, #{member_no}, #{movie_no}, 1, sysdate)
+	</insert>
+	<delete id="ngood">
+		delete good where member_no = #{member_no} and movie_no = #{movie_no}
+	</delete>
+	
+	<select id="checkB" resultType="bad">
+		select distinct(movie_no) from bad where member_no = #{member_no} and movie_bad > 0
+	</select>
+	<insert id="bad">
+		insert into bad values ((select nvl(max(bad_no), 0) from bad)+1, #{member_no}, #{movie_no}, 1, sysdate)
+	</insert>
+	<delete id="nbad">
+		delete bad where member_no = #{member_no} and movie_no = #{movie_no}
+	</delete>
+</mapper>

@@ -1,0 +1,206 @@
+body {
+	font-family: 'TmonMonsori', 'Black Han Sans', 'Noto Sans KR', sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+form {
+	left: 70%;
+}
+strong {
+	color: rgb(236, 196, 136);
+	font-size: x-large;
+	font-weight: bolder;
+}
+#h2 {
+	padding: 30px 5px 5px 0px;
+	margin: 50px 5px 20px 5px;
+}
+#main {
+	position: relative;
+	top: 50%;
+	left: 42%;
+	width: 400px;
+}
+.input-container {
+	width: 100%; 
+	margin-bottom: 15px;
+	display: flex;
+	color: #25478e;
+}
+#input-container_pwd {
+	padding-bottom: 45px;
+}
+
+.nicknameDiv {
+	height: 40px;
+}
+#member_info {
+	padding-right: 20px;
+	padding-left: 5px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	line-height: 40px;
+	vertical-align: middle;
+}
+ #member_info_pwd {
+ 	color: rgb(255, 255, 255);
+ 	text-align: left;
+ 	line-height: 40px;
+ 	vertical-align: middle;
+ 	padding-right: 20px;
+ 	padding-left: 5px;
+}
+
+.icon {
+	width: 40px;
+	margin-right: 10px;
+	padding: 10px;
+	background: rgb(70, 140, 132);
+	color: rgb(236, 196, 136);
+	text-align: center;
+	border-radius: 50%;
+	border: 2px solid rgb(70, 140, 132);
+}
+#update_BtnUpdt {
+	float: right;
+}
+.input-field {
+	width: 250px;
+	height: 40px;
+	margin: 0px;
+	padding-left: 8px;
+	border: none;
+	align-content: center;
+	float: left;
+	vertical-align: middle;
+}
+
+/* Set a style for the submit button */
+.btn_ {
+	width: 39px;
+	height: 24px;
+	margin-top: 7px;
+	margin-left: 3px;
+	background-color: rgb(236, 196, 136);
+	color: rgb(207, 76, 66);
+	border: none;
+	cursor: pointer;
+	opacity: 0.9;
+	float: right;
+	font-size: 12px;
+	font-weight: bolder;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+#member_info a {
+	width: 39px;
+	height: 24px;
+	margin-top: 7px;
+	margin-left: 3px;
+	background-color: rgb(236, 196, 136);
+	color: rgb(207, 76, 66);
+	border: none;
+	cursor: pointer;
+	opacity: 0.9;
+	float: right;
+	font-size: 12px;
+	font-weight: bolder;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+#delete_Member {
+	padding-top: 3px;
+}
+ #pwdup {
+	width: 54px;
+	margin-top: 10px;
+	margin-left: 0px;
+	padding: 0px;
+}
+.btn_:hover {
+	opacity: 1;
+	background-color: rgba(70, 140, 132, 0.9);
+	color: rgb(236, 196, 136);
+	border:1px solid rgb(70, 140, 132);
+}
+
+/* modal 비밀번호 변경 */
+.modal-content {
+	width: 40%;
+	height: auto;
+	margin: auto;
+	margin-top: 3%;
+	padding: 30px 20px 20px 20px;
+	background-color: rgb(207, 76, 66);
+	border: 1px solid rgb(236, 196, 136);    
+}
+#modal-form {
+	margin-top: 10px;
+	text-align: center;
+}
+#member_info_pwd, #pwdup {
+	text-align: center;
+}
+input[id=pwdup] {
+	text-align: center;
+}
+.input-field-modal {
+	width: 250px;
+	height: 40px;
+	padding-left :8px;
+	margin: 0px;
+	border: none;
+	align-content: center;
+	vertical-align: middle;
+}
+#nick_check {
+	margin-left: 50px;
+}
+
+@media (max-width: 767px) {
+	#main {
+		left: 30%;
+	}
+	#h2 {
+		padding: 30px 5px 5px 0px;
+		margin: 80px 5px 20px 5px;
+		font-size: 30px;
+	}
+	.input-field {
+		width: 200px;
+		height: 40px;
+	}
+	.modal-content {
+		width: 50%;
+	}
+	.footer {
+		position: fixed;
+	}
+}
+@media (max-width: 575px) {
+	#main {
+		left: 25%;
+	}
+	.modal-content {
+		width: 60%;
+	}
+}
+@media (max-width: 460px) {
+	#main {
+		left: 15%;
+	}
+	.modal-content {
+		width: 70%;
+	}
+}
+@media (max-width: 406px) {
+	#main {
+		left: 5%;
+	}
+	.modal-content {
+		width: 80%;
+	}
+}

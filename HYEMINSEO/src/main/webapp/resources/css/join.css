@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'TmonMonsori', 'Black Han Sans', 'Noto Sans KR', sans-serif;
+	background-color: rgb(207, 76, 66);
+}
+.box {
+	padding:40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.box h1 {
+	color: rgb(236, 196, 136);
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-stretch: wider;
+	font-size: 35px;
+}
+.box input[type="text"], .box input[type="password"] {
+	width: 200px;
+	margin: 10px auto;
+	padding: 14px 10px;
+	border: 0;
+	background: #e8f0fe;
+	display: block;
+	text-align: center;
+	border: 3px solid #e8f0fe;
+	outline: none;
+	color: rgb(70, 140, 132);
+	transition: 0.25s;	
+	font-family: 'TmonMonsori', sans-serif;
+}
+.box input[type="text"]:focus, .box input[type="password"]:focus {
+	width: 280px;
+	border-color: rgb(236, 196, 136);
+	font-family: 'TmonMonsori', sans-serif;
+}
+.box input[type="submit"], .box span {
+	width: 200px;
+	margin: 20px auto;
+	padding: 14px 10px;
+	border: 2px solid rgb(236, 196, 136);
+	display: block;
+	text-align: center;
+	outline: none;
+	transition: 0.25s;	
+	cursor: pointer;
+	font-size: 12px;
+	font-family: 'TmonMonsori', sans-serif;
+	background: rgb(70, 140, 132);
+	color: rgb(236, 196, 136);
+}
+a {
+	text-decoration: none;
+}
+.box input[type="submit"]:hover,.box span:hover {
+	background: rgb(236, 196, 136);
+	color: rgb(207, 76, 66);
+}

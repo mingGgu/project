@@ -1,0 +1,4 @@
+driver=oracle.jdbc.driver.OracleDriver
+url=jdbc:oracle:thin:@203.236.209.97:1521:XE
+user=hyeminseo
+pwd=hyeminseo

@@ -1,0 +1,307 @@
+html {
+	background: url(../images/bgimg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body {
+	font-family: 'TmonMonsori', 'Black Han Sans', sans-serif;
+}
+h2 {
+	position: fixed;
+    top: 15%;
+    left: 52%;
+	color: rgb(100, 83, 57);
+	font-size: 17px;
+	font-weight: lighter;
+	font-family: 'TmonMonsori', 'Black Han Sans', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.wrapper {
+    position: absolute;
+    left: 40%;
+    top: 43%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: 70px;
+    white-space: nowrap;
+}
+.focus {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    filter: blur(3px);
+    font-size: 72px;
+    opacity: 0.6;
+    color: #fff;
+}
+.mask {
+    position: absolute;
+    left: -5px;
+    top: -7px;
+    width: 80px;
+    height: 90px;
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    clip: rect(0px, 80px, 90px, 0px);
+    background: linear-gradient(#fff, #fff 0) no-repeat,
+    linear-gradient(to right, #fff, #fff 0) no-repeat,
+    linear-gradient(to right, #fff, #fff 0) bottom left no-repeat,
+    linear-gradient(to right, #fff, #fff 0) bottom left no-repeat,
+    linear-gradient(#fff, #fff 0) bottom right no-repeat,
+    linear-gradient(#fff, #fff 0) bottom right no-repeat,
+    linear-gradient(#fff, #fff 0) top right no-repeat,
+    linear-gradient(#fff, #fff 0) top right no-repeat;
+    background-size: 10px 2px, 2px 10px, 2px 10px, 10px 2px, 2px 10px, 10px 2px, 10px 2px, 2px 10px, 10px 2px;
+    color: #fff;
+    padding: 5px;
+    transform: translateX(0);
+    box-sizing: border-box;
+    animation: mask 2.5s ease infinite alternate;
+}
+.text {
+    transform: translateX(0);
+    animation: text 2.5s ease infinite alternate;
+}
+
+@keyframes mask {
+    to {
+        transform: translateX(290px);
+    }
+}
+@keyframes text {
+    to {
+        transform: translateX(-290px);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+	h2 {
+	    top: 20%;
+	}
+	.wrapper {
+	    left: 38%;
+	    top: 43%;
+	}
+	.focus {
+	    font-size: 64px;
+	}
+	.mask {
+	    width: 70px;
+	    height: 80px;
+	    font-size: 64px;
+	    clip: rect(0px, 70px, 80px, 0px);
+	}
+	@keyframes mask {
+	    to {
+	        transform: translateX(260px);
+	    }
+	}
+	@keyframes text {
+	    to {
+	        transform: translateX(-260px);
+	    }
+	}
+}
+@media screen and (max-width: 1080px) {
+	h2 {
+	    top: 24.5%;
+	    font-size: 14px;
+	}
+	.wrapper {
+	    left: 38%;
+	    top: 43%;
+	}
+	.focus {
+	    font-size: 52px;
+	}
+	.mask {
+	    width: 60px;
+	    height: 65px;
+	    top: 5px;
+	    font-size: 52px;
+	    clip: rect(0px, 60px, 65px, 0px);
+	}
+	@keyframes mask {
+	    to {
+	        transform: translateX(210px);
+	    }
+	}
+	@keyframes text {
+	    to {
+	        transform: translateX(-210px);
+	    }
+	}
+}
+@media screen and (max-width: 767px) {
+	h2 {
+	    top: 24.5%;
+	    font-size: 14px;
+	}
+	.wrapper {
+	    left: 35%;
+	    top: 43%;
+	}
+	.focus {
+	    font-size: 52px;
+	}
+	.mask {
+	    width: 60px;
+	    height: 65px;
+	    top: 5px;
+	    font-size: 52px;
+	    clip: rect(0px, 60px, 65px, 0px);
+	}
+	@keyframes mask {
+	    to {
+	        transform: translateX(210px);
+	    }
+	}
+	@keyframes text {
+	    to {
+	        transform: translateX(-210px);
+	    }
+	}
+}
+@media screen and (max-width: 593px) {
+	h2 {
+	    top: 24.5%;
+	    font-size: 14px;
+	}
+	.wrapper {
+	    left: 30%;
+	    top: 43%;
+	}
+	.focus {
+	    font-size: 52px;
+	}
+	.mask {
+	    width: 60px;
+	    height: 65px;
+	    top: 5px;
+	    font-size: 52px;
+	    clip: rect(0px, 60px, 65px, 0px);
+	}
+	@keyframes mask {
+	    to {
+	        transform: translateX(210px);
+	    }
+	}
+	@keyframes text {
+	    to {
+	        transform: translateX(-210px);
+	    }
+	}
+}
+@media screen and (max-width: 505px) {
+	h2 {
+	    top: 24.5%;
+	    font-size: 14px;
+	}
+	.wrapper {
+	    left: 25%;
+	    top: 43%;
+	}
+	.focus {
+	    font-size: 52px;
+	}
+	.mask {
+	    width: 60px;
+	    height: 65px;
+	    top: 5px;
+	    font-size: 52px;
+	    clip: rect(0px, 60px, 65px, 0px);
+	}
+	@keyframes mask {
+	    to {
+	        transform: translateX(210px);
+	    }
+	}
+	@keyframes text {
+	    to {
+	        transform: translateX(-210px);
+	    }
+	}
+}
+@media screen and (max-width: 448px) {
+	html {
+		background: url(../images/bgimg2.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	h2 {
+	    top: 24.5%;
+	    font-size: 14px;
+	}
+	.wrapper {
+	    left: 23%;
+	    top: 43%;
+	}
+	.focus {
+	    font-size: 52px;
+	}
+	.mask {
+	    width: 60px;
+	    height: 65px;
+	    top: 5px;
+	    font-size: 52px;
+	    clip: rect(0px, 60px, 65px, 0px);
+	}
+	@keyframes mask {
+	    to {
+	        transform: translateX(210px);
+	    }
+	}
+	@keyframes text {
+	    to {
+	        transform: translateX(-210px);
+	    }
+	}
+}
+@media screen and (max-width: 416px) {
+	html {
+		background: url(../images/bgimg2.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	h2 {
+	    top: 24.5%;
+	    font-size: 13px;
+	}
+	.wrapper {
+	    left: 20%;
+	    top: 43%;
+	}
+	.focus {
+	    font-size: 52px;
+	}
+	.mask {
+	    width: 60px;
+	    height: 65px;
+	    top: 5px;
+	    font-size: 52px;
+	    clip: rect(0px, 60px, 65px, 0px);
+	}
+	@keyframes mask {
+	    to {
+	        transform: translateX(210px);
+	    }
+	}
+	@keyframes text {
+	    to {
+	        transform: translateX(-210px);
+	    }
+	}
+}

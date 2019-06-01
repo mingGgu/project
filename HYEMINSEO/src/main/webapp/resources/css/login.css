@@ -1,0 +1,115 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'TmonMonsori', 'Black Han Sans', 'Noto Sans KR', sans-serif;
+	background-color: rgb(207, 76, 66);
+}
+.box {
+	width: 300px;
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #60b898;
+	text-align: center;
+	border: 10px solid #f9d99e;
+}
+.box h1 {
+	color: #f9d99e;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-stretch: wider;
+	font-size: 35px;
+}
+.box input[type="text"], .box input[type="password"] {
+	width: 200px;
+	margin: 20px auto;
+	padding: 14px 10px;
+	border: 0;
+	background: #60b898;
+	display: block;
+	text-align: center;
+	border-bottom: 3px solid #e8f0fe;
+	outline: none;
+	color: #e8f0fe;
+	/* border-radius: 15px; */
+	transition: 0.25s;	
+	font-family: 'TmonMonsori', sans-serif;
+}
+.box input[type="text"]:focus, .box input[type="password"]:focus {
+	width: 280px;
+	border-color: #f9d99e;
+	font-family: 'TmonMonsori', sans-serif;
+}
+.box input[type="submit"] {
+	width: 173px;
+	margin: 20px auto;
+	padding: 14px 10px;
+	border: 2px solid #f9d99e;
+	display: block;
+	text-align: center;
+	outline: none;
+	transition: 0.25s;	
+	cursor: pointer;
+	font-size: 14px;
+	font-family: 'TmonMonsori', sans-serif;
+	font-weight: normal;
+	background: #dc564a;
+	color: #f9d99e;
+}
+.box span {
+	width: 110px;
+	margin: 0px 0px 0px 170px;
+	padding: 10px 0px 20px;
+	right: 0;
+	border: 0;
+	display: block;
+	text-align: right;
+	outline: none;
+	transition: 0.25s;	
+	cursor: pointer;
+	font-family: 'TmonMonsori', sans-serif;
+	color: #f9d99e;
+}
+a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #f9d99e;
+}
+.box input[type="submit"]:hover {
+	background: #f9d99e;
+	color: #dc564a;
+}
+a:hover {
+	color: rgba(255, 255, 255, 0.9);
+}
+input::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.4);
+	font-style: italic;
+}
+input:-ms-input-placeholder {
+	color: rgba(255, 255, 255, 0.4);
+	font-style: italic;
+}
+
+/* @media ( max-width: 400px)
+ {
+ 	.box{
+		width:250px;
+		height: auto;
+	}
+	.box h1{
+		font-size: 25px;
+	}
+	.box input[type="text"], .box input[type="password"]{
+		margin: 10px auto;
+		border: 2px solid #518d88;
+		padding: 14px 10px;
+		width: 150px;
+		font-size:11px;
+	}
+	.box input[type="text"]:focus, .box input[type="password"]:focus{
+		width: 230px;
+	}
+ } */
